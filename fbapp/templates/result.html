@@ -5,19 +5,7 @@
       <div class="container" id="maincontent" tabindex="-1">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
-              <div class="card">
-                <div class="row">
-                  <div class="col-sm-3 col-sm-offset-3">
-                      <img class="img-responsive img-circle user_profile" src={{user_image}} id="user_image">
-                  </div>
-                  <div class="col-sm-3">
-                    <h2 id="user_name">{{ user_name }}</h2>
-                  </div>
-                  <div class="col-sm-12">
-                    <p id="description">{{ description}}</p>
-                  </div>
-                </div>
-              </div>
+              {% include 'card.html' %}
             </div>
         </div>
         <div class="row">
@@ -36,7 +24,7 @@
     <script>
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '{{ 3084275108271122 }}',
+          appId      : '{{ 898223130622563 }}',
           cookie     : true,  // enable cookies to allow the server to access
                               // the session
           xfbml      : true,  // parse social plugins on this page
@@ -48,7 +36,7 @@
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId={{ 3084275108271122 }}";
+        js.src = "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId={{ 898223130622563 }}";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
